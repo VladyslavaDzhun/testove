@@ -1,0 +1,314 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFAFA;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  max-width: 100%;
+  max-height: 100vh;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 80%;
+  height: 95vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.form-container {
+    width: 300px;
+  margin: 0 auto;
+  margin-top: 50px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .login-input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .password-input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .name-input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333; 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  .submit-button:hover {
+    background-color: #C0C0C0;
+    color: black;
+  }
+
+  .register-link {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 30%;
+  }
+
+.register-buttons {
+  display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px ;
+}
+
+.login-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+  margin-right: 20px;
+}
+
+.login-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+.register-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.register-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* кнопка ствонення новини на головному екрані */
+.news-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+  width: 300px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.news-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* кнопка виходу */
+.logout-buttom {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+  position: absolute;
+  top: 60px;
+  left: 1400px;
+}
+
+.logout-buttom:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* вітання */
+.vitaemo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* заголовок створення новини */
+.title-news {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* контейнер створення новини */
+.create-news-container {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 25px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* зоголовок новини */
+label.news-title {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Стиль для текстового поля заголовка новини (input[name="title"]) */
+input[name="title"] {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Стиль для тексту новини (label.news-text) */
+label.news-text {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Стиль для текстового поля новини (textarea[name="text"]) */
+textarea[name="text"] {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* кнопка стврення новини */
+button.create-news-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 90px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+  
+}
+
+.create-news-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* кнопка повернення на головну сторінку */
+.return-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.return-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* заголовок створення коментарів */
+.title-comment {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* контейнер для створення коментарів */
+.create-comment-container {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 25px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Стиль для текстового поля коментаря (label.comment-text) */
+label.comment-text {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Стиль для текстового поля коментаря (textarea[name="text"]) */
+textarea[name="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

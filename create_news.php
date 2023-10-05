@@ -4,7 +4,7 @@ require_once 'config.php';
 require_once 'user.php';
 require_once 'news.php';
 // Перевірка, чи користувач авторизований, та чи він адміністратор
-if (!isUserLoggedIn() || !isAdmin($_SESSION['user_id'])) {
+if (!isUserLoggedIn()) {
     header('Location: index.php?action=home');
     exit;
 }
@@ -28,20 +28,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Створення новини</h1>
+    <h1  class = "title-news">Створення новини</h1>
     
     <?php echo $message; ?>
-    
-    <form method="post" action="index.php?action=create_news">
-        <label>Заголовок:</label>
-        <input type="text" name="title" required><br>
+    <div class="create-news-container">
+        <form method="post" action="index.php?action=create_news">
+            <label class = "news-title">Заголовок:</label>
+            <input type="text" name="title" required><br>
         
-        <label>Текст:</label>
-        <textarea name="text" rows="4" required></textarea><br>
+            <label class = "news-text">Текст:</label>
+            <textarea name="text" rows="4" required></textarea><br>
         
-        <button type="submit">Створити новину</button>
-    </form>
+            <button type="submit" class = "create-news-button">Створити новину</button>
+        </form>
     
-    <p><a href="index.php?action=home">На головну</a></p>
+        <p><a href="index.php?action=home" class = "return-button">На головну</a></p>
+    </div>
 </body>
 </html>

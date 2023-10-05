@@ -46,4 +46,12 @@ function isAdmin ($user_id) {
 
     return false;
 }
+
+function isAuthor($userId, $authorId) {
+    if($userId === $authorId || isAdmin($userId))
+    {
+        return true;
+    }
+    return false;
+}
 ?>

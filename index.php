@@ -25,14 +25,31 @@ switch ($action) {
         // Створення нової новини
         include 'create_news.php';
         break;
+    case 'edit_news':
+        // Створення нової новини
+        include 'edit_news.php';
+        break;
     case 'get_news':
         //  Отримання новини по id
         include 'get_news.php';
         break;
-    // case 'create_comment':
-    //     // Створення нового коментаря
-    //     include 'create_comment.php';
-    //     break;
+    case 'create_comment':
+        // Створення нового коментаря
+        include 'create_comment.php';
+        break;
+    case 'edit_comment':
+        // Створення нової новини
+        include 'edit_comment.php';
+        break;
+    case 'delete_news':
+        // Створення нової новини
+        include 'delete_news.php';
+        break;
+    case 'delete_comment':
+        // Створення нової новини
+        include 'delete_comment.php';
+        break;
+        
     // // Додаткові дії та маршрути можна додати тут
     default:
         // Відображення сторінки 404, якщо дія не знайдена

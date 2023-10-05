@@ -29,23 +29,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Реєстрація</h1>
+    <div class="form-container">
+        <h1 class = "form-title">Реєстрація</h1>
     
     <?php echo $message; ?>
-    
-    <form method="post" action="index.php?action=register">
-        <label>Ім'я:</label>
-        <input type="text" name="name" required><br>
+        <div class="register">
+            <form method="post" action="index.php?action=register">
+                <label>Ім'я:</label>
+                <input type="text" name="name" class = "name-input" required><br>
         
-        <label>Email:</label>
-        <input type="email" name="email" required><br>
+                <label>Email:</label>
+                <input type="email" name="email" class = "login-input" required><br>
         
-        <label>Пароль:</label>
-        <input type="password" name="password" required><br>
+                 <label>Пароль:</label>
+                <input type="password" name="password" class = "password-input" required><br>
         
-        <button type="submit">Зареєструватися</button>
-    </form>
-    
-    <p>Вже маєте акаунт? <a href="index.php?action=login">Увійдіть</a></p>
+             <button type="submit" class = "submit-button">Зареєструватися</button>
+            </form>
+        </div>
+    <p>Вже маєте акаунт? <a href="index.php?action=login" class = "register-link">Увійдіть</a></p>
+    </div>
 </body>
 </html>
