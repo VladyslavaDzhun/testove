@@ -37,20 +37,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Редагування новини</h1>
-    
-    <?php echo $message; ?>
-    
-    <form method="post" action="index.php?action=edit_news&news_id=<?php echo $news_id; ?>">
-        <label>Заголовок:</label>
-        <input type="text" name="title" value="<?php echo $news['title']; ?>" required><br>
+    <div class="container">
+        <h1 class = "edit_comment_news">Редагування новини</h1>
         
-        <label>Текст:</label>
-        <textarea name="text" rows="4" required><?php echo $news['text']; ?></textarea><br>
-        
-        <button type="submit">Зберегти зміни</button>
-    </form>
-    
-    <p><a href="index.php?action=home">На головну</a></p>
+        <?php echo $message; ?>
+        <div class="create-news-container">
+            <form method="post" action="index.php?action=edit_news&news_id=<?php echo $news_id; ?>">
+                <label class = "label-news-title">Заголовок:</label>
+                <input type="text" name="title" value="<?php echo $news['title']; ?>" required><br>
+                
+                <label class = "text_edit_comment_news">Текст:</label>
+                <textarea name="text" rows="4" required><?php echo $news['text']; ?></textarea><br>
+                
+                <button type="submit" class = "button_edit_comment_news">Зберегти зміни</button>
+            </form>
+            
+            <p><a href="index.php?action=home" class = "return-button">На головну</a></p>
+        </div>
+    </div>
 </body>
 </html>

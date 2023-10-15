@@ -30,15 +30,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class = "title-comment">Створення коментаря</h1>
+    <h1>Створення коментаря</h1>
     
     <?php echo $message; ?>
     <div class="create-comment-container">
         <form method="post" action="index.php?action=create_comment&news_id=<?php echo $news_id; ?>">
-            <label class = "comment-text">Текст коментаря:</label>
+            <label>Текст коментаря:</label>
             <textarea name="text" rows="4" required></textarea><br>
         
-            <button type="submit" class = "create-comment-button">Залишити коментар</button>
+            <button type="submit">Залишити коментар</button>
         </form>
     
         <p><a href="index.php?action=home" class = "return-button">На головну</a></p>

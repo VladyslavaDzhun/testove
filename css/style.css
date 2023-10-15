@@ -7,9 +7,9 @@ body {
 }
 
 .page {
-  max-width: 100%;
-  max-height: 100vh;
-  background-image: url(img/background.jpg);
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,13 +18,14 @@ body {
 
 .container {
   max-width: 80%;
-  height: 95vh;
+  height: 100%;
   margin: 0 auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* заголовок "головна сторінка" */
 .header {
   background-color: #333;
   color: #fff;
@@ -32,8 +33,9 @@ body {
   text-align: center;
 }
 
+/* контейнер реєстрації, входу */
 .form-container {
-    width: 300px;
+  width: 300px;
   margin: 0 auto;
   margin-top: 50px; 
   padding: 20px;
@@ -42,60 +44,67 @@ body {
   background-color: #f9f9f9;
 }
 
+/* заголовок реєстрація, вхід */
 .form-title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-  .login-input {
-    width: 93%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
+/* поле логіна */
+.login-input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 
-  .password-input {
-    width: 93%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
+/* поле пароля */
+.password-input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 
-  .name-input {
-    width: 93%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
+/* поле ім'я користувача */
+.name-input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 
-  .submit-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #333; 
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: .3s;
-  }
+/* кнопка зареєструватися, увійти */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333; 
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
 
-  .submit-button:hover {
-    background-color: #C0C0C0;
-    color: black;
-  }
+.submit-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
 
-  .register-link {
-    text-align: center;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 30%;
-  }
+/* маєте, не маєте акаунт, увійдіть, зареєструйтесь */
+.register-link {
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 30%;
+}
 
+/* кнопки входу та реєстрації на головній сторінці */
 .register-buttons {
   display: flex;
 justify-content: center;
@@ -103,6 +112,7 @@ align-items: center;
 padding: 20px ;
 }
 
+/* кнопка увійти на головній сторінці */
 .login-button {
   background-color: #333;
   color: #fff;
@@ -120,6 +130,7 @@ padding: 20px ;
   color: black;
 }
 
+/* кнопка зареєструватися на головній сторінці */
 .register-button {
   background-color: #333;
   color: #fff;
@@ -288,7 +299,6 @@ button.create-news-button {
 /* контейнер для створення коментарів */
 .create-comment-container {
   width: 700px;
-  margin: 0 auto;
   margin-top: 25px; 
   padding: 20px;
   border: 1px solid #ccc;
@@ -311,4 +321,172 @@ textarea[name="text"] {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+/* кнопка стоврити коментар */
+.comment-button {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 90px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.comment-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* контейнер для  новин на головній сторінці */
+.news-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+}
+
+/* заголовк новини на головній сторінці */
+.title-news-home {
+  color: #333;
+  text-decoration: none;
+}
+
+/* текс новини на головній сторінці */
+.text-news-home {
+  color: #666;
+}
+
+/* хто автор новини на головній сторінці */
+.author-home {
+  color: #999;
+}
+
+/* повідомлення немає новин на головній сторінці */
+.no-news-home {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* повідомлення що немає коментарів на сторінці новини */
+.no-comment {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* кнопка "видалити новину" на сторінці новини */
+.delete-news-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.delete-news-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* кнопка "редагувати" новину на сторінці новини */
+.edit-news-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.edit-news-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* кнопка "редагувати коментар" на сторінці новини */
+.edit-comment-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.edit-comment-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* кнопка "видалити коментар" на сторінці новини */
+.delete-comment-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.delete-comment-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+
+/* заголовок редагувати коментар/новину на сторінці редагування коментаря/новини */
+.edit_comment_news {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* поле тексу на сторінці редагувати коментар/новину */
+.text_edit_comment_news {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+/* поле заголовка на сторінці редагування новини */
+.label-news-title {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
+
+/* кнопка зберегти зміни на сторінці редагування коментаря/новини */
+.button_edit_comment_news {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.button_edit_comment_news:hover {
+  background-color: #C0C0C0;
+  color: black;
 }

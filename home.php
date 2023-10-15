@@ -40,13 +40,15 @@ require_once 'user.php';
             if (!empty($newsList)) {
                 foreach ($newsList as $news) {
                     echo '<div>';
-                    echo '<h3> <a href="index.php?action=get_news&id='.$news["id"].'">' . $news['title'] . '</a></h3>';
-                    echo '<p>' . $news['text'] . '</p>';
-                    echo '<p>Автор: ' . $news['author'] . '</p>';
+                    echo '<div class="news-container">';
+                    echo '<h3 class = "title-news-home"> <a href="index.php?action=get_news&id='.$news["id"].'">' . htmlentities( $news['title'], ENT_QUOTES) .'</a></h3>';
+                    echo '<p class = "text-news-home">' . htmlentities($news['text'], ENT_QUOTES) . '</p>';
+                    echo '<p class = "author-home">Автор: ' . htmlentities($news['author'], ENT_QUOTES) . '</p>';
+                    echo '</div>';
                     echo '</div>';
                 }
             } else {
-                 echo '<p>Немає новин.</p>';
+                 echo '<p class = "no-news-home">Немає новин.</p>';
                 }
             ?>
         </div>
